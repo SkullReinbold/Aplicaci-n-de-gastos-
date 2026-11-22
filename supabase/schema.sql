@@ -16,3 +16,6 @@ create policy "own expenses" on public.expenses
   for all to authenticated
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
+
+grant usage on schema public to authenticated;
+grant select, insert, update, delete on public.expenses to authenticated;
