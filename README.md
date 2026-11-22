@@ -6,7 +6,9 @@ Node.js LTS, Android Studio con emulador (API 34) o Expo Go, y un proyecto de Su
 
 ## Instalación
 ```bash
-git clone <URL_DEL_REPO> && cd gastos-personales
+git clone https://github.com/SkullReinbold/Aplicaci-n-de-gastos-.git
+cd Aplicaci-n-de-gastos-
+
 npm install
 cp .env.example .env      # completa con tus credenciales de Supabase
 npx expo start --android
@@ -28,3 +30,6 @@ npx expo start --android
 
 ## Flujo de ramas
 `main` ← `develop` ← `feature/*`; `hotfix/*` sale de `main`.
+## Instalar la app (APK)
+Descarga e instala el APK de Android desde:
+https://expo.dev/accounts/skullreinbold/projects/gastos-personales/builds/3592cbdf-3893-4e34-b885-8357ca89532e
