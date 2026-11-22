@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Gastos Personales",
+    "slug": "gastos-personales",
+    "version": "1.0.0",
+    "plugins": [
+      "expo-secure-store",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Se usa la cámara para fotografiar tickets."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Autenticación biométrica."
+        }
+      ],
+      "expo-notifications",
+      "expo-asset"
+    ],
+    "android": {
+      "package": "com.gastos.personales",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "32bbf4e1-1204-4d35-ade2-629da72a854b"
+      }
+    }
+  }
+}
